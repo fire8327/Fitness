@@ -1,0 +1,11 @@
+.swiper-scrollbar{
+    height: 4px;
+    border-radius: 0;
+    background-color:white;
+}
+.swiper-scrollbar-drag{
+    height: 10px;
+    background-color: #F7931E;
+    border-radius: 0;
+    margin-top: -2px;
+}

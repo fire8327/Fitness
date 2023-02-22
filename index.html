@@ -4,79 +4,281 @@
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Assets/CSS/custom.css">
 </head>
 <body>
-		<!-- Начало: Данный блок удалять нельзя -->
-		<style>
-			.maketforfigma{
-				flex: 0 0 auto;
-				/*background: #303b44;*/
-				/*background: #5CDB95;*/
-				background: #313a46;
-				font-weight: bold;
-				display: flex;
-			}
-			.maketforfigma img{
-				border-radius: 10px;
-				margin: 4px 0 0 4px;
-			}
-			.maketforfigma p {
-				/*color: #fff;*/
-				/*color: #05386B;*/
-				color: #98a6ad;
-				text-decoration: none;
-				letter-spacing: .01875rem;
-				font-size: .775rem;
-				padding: 0 10px;
-				line-height: 0.70rem;
-			}
+	<!-- Начало: Данный блок удалять нельзя -->
+	<style>
+		.maketforfigma{
+			flex: 0 0 auto;
+			/*background: #303b44;*/
+			/*background: #5CDB95;*/
+			background: #313a46;
+			font-weight: bold;
+			display: flex;
+		}
+		.maketforfigma img{
+			border-radius: 10px;
+			margin: 4px 0 0 4px;
+		}
+		.maketforfigma p {
+			/*color: #fff;*/
+			/*color: #05386B;*/
+			color: #98a6ad;
+			text-decoration: none;
+			letter-spacing: .01875rem;
+			font-size: .775rem;
+			padding: 0 10px;
+			line-height: 0.70rem;
+		}
 
-			.maketforfigma p > a {
-				/*color: #08ff00;*/
-				/*color: #EDF5E1;*/
-				color: #bbe4f0;
-				font-weight: bold;
-			}
-			.maketforfigma p > a:hover {
-				/*color: #ffa001*/
-				/*color: #379683*/
-				color: #ffffff
-			}
+		.maketforfigma p > a {
+			/*color: #08ff00;*/
+			/*color: #EDF5E1;*/
+			color: #bbe4f0;
+			font-weight: bold;
+		}
+		.maketforfigma p > a:hover {
+			/*color: #ffa001*/
+			/*color: #379683*/
+			color: #ffffff
+		}
 
-			.main{
-				flex: 1 0 auto;
-			}
+		.main{
+			flex: 1 0 auto;
+		}
 
-			html{
-				height: 100%;
-			}
+		html{
+			height: 100%;
+		}
 
-			body{
-				display: flex;
-				flex-direction: column;
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-		</style>
-		<div class="maketforfigma">
-			<a href="https://t.me/s/FigmaToHTML" target="_blank">
-				<img src="logo.png">
-			</a>
-			<div>
-				<p>
-					Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
-				</p>
-				<p>
-					При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
-					<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
-				</p>
+		body{
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+	<div class="maketforfigma">
+		<a href="https://t.me/s/FigmaToHTML" target="_blank">
+			<img src="logo.png">
+		</a>
+		<div>
+			<p>
+				Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
+			</p>
+			<p>
+				При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
+				<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
+			</p>
+		</div>
+	</div>
+	<!-- Конец -->
+
+	<div class="main">
+		<header class="bg-[url('Assets/Images/header/bg-mobile.svg')] md:bg-[url('Assets/Images/header/bg-tablet.svg')] lg:bg-[url('Assets/Images/header/bg-desktop.svg')] h-screen bg-cover bg-no-repeat pb-12">
+			<div class="flex flex-col justify-between h-full w-full items-center relative container mx-auto px-4 pt-7 md:pt-4 xl:pt-0">
+				<div class="w-full flex justify-between items-center flex-wrap">
+					<img src="Assets/Images/header/logo.svg" alt="" class="w-32 md:w-44 lg:w-auto">
+					<div class="hidden md:flex gap-12 font-bold text-white md:w-full lg:w-auto md:order-last lg:order-none md:justify-center lg:justify-start">
+						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">О нас</a>
+						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Галерея</a>
+						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Абонементы</a>
+						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Тренеры</a>
+						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Контакты</a>
+					</div>
+					<a href="tel:+74964161916" class="hidden md:block text-white font-semibold">+7 (496) 416-19-16</a>
+					<button class="md:hidden" id="toggler">
+						<img src="Assets/Images/header/menu.svg" alt="">
+					</button>
+				</div>
+				<div class="flex flex-col gap-9 text-white items-center">
+					<p class="font-bold text-[48px] md:text-[58px] lg:text-[64px] text-center">Фитнес клуб Пантеон</p>
+					<p class="font-medium text-xl md:text-[28px]">Лучше нас только боги</p>
+					<button class="relative">
+						<div class="font-bold border border-white -skew-x-[20deg] p-4 z-10 relative">
+							<span class="skew-x-[20deg] block">Получить консультанцию</span>
+						</div>
+						<div class="bg-[#F7931E] -skew-x-[20deg] w-full h-full absolute top-2 right-2.5"></div>
+					</button>
+				</div>
+				<button class="w-7 h-7">
+					<img src="Assets/Images/header/arrow.svg" alt="">
+				</button>
+				<div class="flex gap-4 absolute items-center bottom-0 right-4">
+					<a href=""><img src="Assets/Images/header/inst.svg" alt=""></a>
+					<a href=""><img src="Assets/Images/header/vk.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="w-full flex">
+				<div id="mobile__nav" class="backdrop-blur-[5px] bg-gradient-to-b from-[rgba(0,0,0,0.85)] to-[rgba(0,0,0,0.8075)] text-white text-sm font-semibold fixed top-0 right-0 flex flex-col gap-7 w-full md:hidden pt-7 pb-4 px-4 transform -translate-y-full transition duration-300 ease-in-out z-30">
+					<div class="flex justify-between items-center">
+						<img src="Assets/Images/header/logo.svg" alt="" class="w-32">
+						<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg" id="toggler__expanded">
+							<path d="M24.5 1.25L13.25 12.5M2 23.75L13.25 12.5M13.25 12.5L2 1.25L24.5 23.75" stroke="white" stroke-width="3"/>
+						</svg>
+					</div>
+					<div class="grid grid-cols-2 gap-7">
+						<div class="flex flex-col items-center gap-4">
+							<a href="">Тренеры</a>
+							<a href="">Контакты</a>
+							<a href="tel:+74964161916">+7 (496) 416-19-16</a>
+						</div>
+						<div class="flex flex-col items-center gap-4">
+							<a href="">О нас</a>
+							<a href="">Галерея</a>
+							<a href="">Абонементы</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>  
+	
+		<div class="w-full bg-[#0C1417] bg-[url('Assets/Images/galery/arrows.svg')] py-20 md:py-[90px] lg:py-24 bg-no-repeat bg-left-bottom flex flex-col gap-20 lg:gap-24 md:gap-[90px]">
+			<div class="flex flex-col lg:flex-row justify-center gap-10 md:gap-14 lg:gap-20 px-4">
+				<div class="flex flex-col md:flex-row gap-7 items-start">
+					<img src="Assets/Images/lifestyle/1.png" alt="" class="w-full">
+					<img src="Assets/Images/lifestyle/2.png" alt="" class="w-full lg:mt-10">               
+				</div>
+				<div class="flex flex-col gap-10 text-white items-center lg:items-start md:text-center lg:text-left order-first lg:order-last">
+					<p class="font-bold text-[30px]">Новый образ жизни</p>
+					<p class="block lg:w-[450px] md:mt-2">Став частью нашей команды, вы сможете изменить привычный ритм жизни и сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего тела на 100%. </p>
+					<button class="font-bold border border-white -skew-x-[20deg] p-4 z-10 relative w-fit origin-bottom">
+						<span class="skew-x-[20deg] block">Получить консультанцию</span>
+					</button>
+				</div>
+			</div>
+			<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 items-center text-white font-medium text-xl px-4 lg:w-full md:w-9/12 w-11/12">
+				<div class="flex flex-col xl:flex-row text-center items-center gap-6 hover:delay-100 transition-all duration-500 border-b-2 border-transparent hover:border-[#F7931E] pb-4 order-1 md:order-none">
+					<img class="w-16 h-16" src="Assets/Images/info/1.svg" alt="">
+					<p>Полностью укомплектованный зал</p>
+				</div>
+				<div class="flex flex-col xl:flex-row text-center items-center gap-6 hover:delay-100 transition-all duration-500 border-b-2 border-transparent hover:border-[#F7931E] pb-4 order-3 md:order-none">
+					<img class="w-16 h-16" src="Assets/Images/info/2.svg" alt="">
+					<p>Профессиональное оборудование</p>
+				</div>
+				<div class="flex flex-col xl:flex-row text-center items-center gap-6 hover:delay-100 transition-all duration-500 border-b-2 border-transparent hover:border-[#F7931E] pb-4 order-2 md:order-none">
+					<img class="w-16 h-16" src="Assets/Images/info/3.svg" alt="">
+					<p>Удобное расположение в центре города</p>
+				</div>
+				<div class="flex flex-col xl:flex-row text-center items-center gap-6 hover:delay-100 transition-all duration-500 border-b-2 border-transparent hover:border-[#F7931E] pb-4 order-4 md:order-none">
+					<img class="w-16 h-16" src="Assets/Images/info/4.svg" alt="">
+					<p>Доступная стоимость занятий</p>
+				</div>
+			</div>
+			<div class="container mx-auto flex flex-col lg:gap-14 gap-[60px] pl-4 lg:pl-0 lg:px-4">
+				<p class="text-center text-white font-bold text-3xl">Галерея</p>
+				<div class="gap-10 flex items-center lg:mt-5">
+					<div class="swiper w-full h-[280px] md:h-auto xl:h-[375px] pb-10 galery-1 box-content items-center">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+						<!-- Slides -->
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/3.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/4.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/2.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/1.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/3.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/4.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/2.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full md:h-auto lg:h-full object-contain" src="Assets/Images/galery/1.png" alt="">
+							</div>
+						</div>              
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="prev-galery1 order-first group hidden lg:flex">
+						<svg class="group-hover:fill-[#F7931E] group-hover:delay-100 transition-all duration-500 fill-white" width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M35.5 12.0384C35.5 11.7069 35.3683 11.389 35.1339 11.1546C34.8995 10.9201 34.5816 10.7884 34.25 10.7884H4.76754L12.635 2.92344C12.7513 2.80722 12.8434 2.66925 12.9063 2.5174C12.9692 2.36555 13.0016 2.2028 13.0016 2.03844C13.0016 1.87408 12.9692 1.71133 12.9063 1.55949C12.8434 1.40764 12.7513 1.26966 12.635 1.15344C12.5188 1.03722 12.3808 0.945034 12.229 0.882136C12.0771 0.819238 11.9144 0.786865 11.75 0.786865C11.5857 0.786865 11.4229 0.819238 11.2711 0.882136C11.1192 0.945034 10.9813 1.03722 10.865 1.15344L0.865037 11.1534C0.748629 11.2696 0.656272 11.4075 0.593256 11.5594C0.53024 11.7112 0.497803 11.874 0.497803 12.0384C0.497803 12.2029 0.53024 12.3657 0.593256 12.5175C0.656272 12.6694 0.748629 12.8073 0.865037 12.9234L10.865 22.9234C10.9813 23.0397 11.1192 23.1319 11.2711 23.1948C11.4229 23.2577 11.5857 23.29 11.75 23.29C11.9144 23.29 12.0771 23.2577 12.229 23.1948C12.3808 23.1319 12.5188 23.0397 12.635 22.9234C12.7513 22.8072 12.8434 22.6693 12.9063 22.5174C12.9692 22.3656 13.0016 22.2028 13.0016 22.0384C13.0016 21.8741 12.9692 21.7113 12.9063 21.5595C12.8434 21.4076 12.7513 21.2697 12.635 21.1534L4.76754 13.2884H34.25C34.5816 13.2884 34.8995 13.1567 35.1339 12.9223C35.3683 12.6879 35.5 12.37 35.5 12.0384Z"/>
+						</svg>                        
+					</div>
+					<div class="next-galery1 order-last group hidden lg:flex">
+						<svg class="group-hover:fill-[#F7931E] group-hover:delay-100 transition-all duration-500 fill-white" width="36" class="z-50" height="23" viewBox="0 0 36 23" fill="white" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.499966 11.5C0.499966 11.8315 0.63166 12.1495 0.866081 12.3839C1.1005 12.6183 1.41845 12.75 1.74997 12.75L31.2325 12.75L23.365 20.615C23.2487 20.7312 23.1566 20.8692 23.0937 21.021C23.0308 21.1729 22.9984 21.3356 22.9984 21.5C22.9984 21.6644 23.0308 21.8271 23.0937 21.979C23.1566 22.1308 23.2487 22.2688 23.365 22.385C23.4812 22.5012 23.6192 22.5934 23.771 22.6563C23.9229 22.7192 24.0856 22.7516 24.25 22.7516C24.4143 22.7516 24.5771 22.7192 24.7289 22.6563C24.8808 22.5934 25.0187 22.5012 25.135 22.385L35.135 12.385C35.2514 12.2689 35.3437 12.131 35.4067 11.9791C35.4698 11.8272 35.5022 11.6644 35.5022 11.5C35.5022 11.3356 35.4698 11.1728 35.4067 11.0209C35.3437 10.8691 35.2514 10.7311 35.135 10.615L25.135 0.615004C25.0187 0.498785 24.8808 0.406593 24.7289 0.343697C24.5771 0.280798 24.4143 0.248426 24.25 0.248426C24.0856 0.248426 23.9229 0.280798 23.771 0.343697C23.6192 0.406593 23.4812 0.498785 23.365 0.615004C23.2487 0.731224 23.1566 0.869196 23.0937 1.02105C23.0308 1.17289 22.9984 1.33565 22.9984 1.5C22.9984 1.66436 23.0308 1.82712 23.0937 1.97896C23.1566 2.13081 23.2487 2.26879 23.365 2.385L31.2325 10.25L1.74997 10.25C1.41845 10.25 1.1005 10.3817 0.866081 10.6161C0.63166 10.8505 0.499966 11.1685 0.499966 11.5Z"/>
+						</svg>                        
+					</div>
+				</div>
+				<div class="gap-10 flex items-center">
+					<div class="swiper w-full h-[186px] md:h-[350px] lg:h-auto xl:h-[300px] pb-10 galery-2 box-content items-center">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+						<!-- Slides -->
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full w-full lg:h-auto" src="Assets/Images/galery/5.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full w-full lg:h-auto" src="Assets/Images/galery/6.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full w-full lg:h-auto" src="Assets/Images/galery/7.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full w-full lg:h-auto" src="Assets/Images/galery/5.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full w-full lg:h-auto" src="Assets/Images/galery/6.png" alt="">
+							</div>
+							<div class="swiper-slide max-w-fit">
+								<img class="h-full w-full lg:h-auto" src="Assets/Images/galery/7.png" alt="">
+							</div>
+						</div>              
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="prev-galery2 order-first group hidden lg:flex">
+						<svg class="group-hover:fill-[#F7931E] group-hover:delay-100 transition-all duration-500 fill-white" width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M35.5 12.0384C35.5 11.7069 35.3683 11.389 35.1339 11.1546C34.8995 10.9201 34.5816 10.7884 34.25 10.7884H4.76754L12.635 2.92344C12.7513 2.80722 12.8434 2.66925 12.9063 2.5174C12.9692 2.36555 13.0016 2.2028 13.0016 2.03844C13.0016 1.87408 12.9692 1.71133 12.9063 1.55949C12.8434 1.40764 12.7513 1.26966 12.635 1.15344C12.5188 1.03722 12.3808 0.945034 12.229 0.882136C12.0771 0.819238 11.9144 0.786865 11.75 0.786865C11.5857 0.786865 11.4229 0.819238 11.2711 0.882136C11.1192 0.945034 10.9813 1.03722 10.865 1.15344L0.865037 11.1534C0.748629 11.2696 0.656272 11.4075 0.593256 11.5594C0.53024 11.7112 0.497803 11.874 0.497803 12.0384C0.497803 12.2029 0.53024 12.3657 0.593256 12.5175C0.656272 12.6694 0.748629 12.8073 0.865037 12.9234L10.865 22.9234C10.9813 23.0397 11.1192 23.1319 11.2711 23.1948C11.4229 23.2577 11.5857 23.29 11.75 23.29C11.9144 23.29 12.0771 23.2577 12.229 23.1948C12.3808 23.1319 12.5188 23.0397 12.635 22.9234C12.7513 22.8072 12.8434 22.6693 12.9063 22.5174C12.9692 22.3656 13.0016 22.2028 13.0016 22.0384C13.0016 21.8741 12.9692 21.7113 12.9063 21.5595C12.8434 21.4076 12.7513 21.2697 12.635 21.1534L4.76754 13.2884H34.25C34.5816 13.2884 34.8995 13.1567 35.1339 12.9223C35.3683 12.6879 35.5 12.37 35.5 12.0384Z"/>
+						</svg>                        
+					</div>
+					<div class="next-galery2 order-last group hidden lg:flex">
+						<svg class="group-hover:fill-[#F7931E] group-hover:delay-100 transition-all duration-500 fill-white" width="36" class="z-50" height="23" viewBox="0 0 36 23" fill="white" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.499966 11.5C0.499966 11.8315 0.63166 12.1495 0.866081 12.3839C1.1005 12.6183 1.41845 12.75 1.74997 12.75L31.2325 12.75L23.365 20.615C23.2487 20.7312 23.1566 20.8692 23.0937 21.021C23.0308 21.1729 22.9984 21.3356 22.9984 21.5C22.9984 21.6644 23.0308 21.8271 23.0937 21.979C23.1566 22.1308 23.2487 22.2688 23.365 22.385C23.4812 22.5012 23.6192 22.5934 23.771 22.6563C23.9229 22.7192 24.0856 22.7516 24.25 22.7516C24.4143 22.7516 24.5771 22.7192 24.7289 22.6563C24.8808 22.5934 25.0187 22.5012 25.135 22.385L35.135 12.385C35.2514 12.2689 35.3437 12.131 35.4067 11.9791C35.4698 11.8272 35.5022 11.6644 35.5022 11.5C35.5022 11.3356 35.4698 11.1728 35.4067 11.0209C35.3437 10.8691 35.2514 10.7311 35.135 10.615L25.135 0.615004C25.0187 0.498785 24.8808 0.406593 24.7289 0.343697C24.5771 0.280798 24.4143 0.248426 24.25 0.248426C24.0856 0.248426 23.9229 0.280798 23.771 0.343697C23.6192 0.406593 23.4812 0.498785 23.365 0.615004C23.2487 0.731224 23.1566 0.869196 23.0937 1.02105C23.0308 1.17289 22.9984 1.33565 22.9984 1.5C22.9984 1.66436 23.0308 1.82712 23.0937 1.97896C23.1566 2.13081 23.2487 2.26879 23.365 2.385L31.2325 10.25L1.74997 10.25C1.41845 10.25 1.1005 10.3817 0.866081 10.6161C0.63166 10.8505 0.499966 11.1685 0.499966 11.5Z"/>
+						</svg>                        
+					</div>
+				</div>
 			</div>
 		</div>
-		<!-- Конец -->
+	
+		<div class="w-full min-h-screen lg:py-24 bg-cover bg-no-repeat bg-[url('Assets/Images/ticket/bg-desktop.svg')] px-4">
+			<div class="container mx-auto flex flex-col gap-20">
+				<p class="font-bold text-3xl">Абонементы</p>
+				<table class="w-full">
+					<thead class="border-b border-[#0C1417] pb-4 h-auto border-opacity-50">
+						<tr>
+							<th class="text-xl font-medium">Кол-во занятий</th>
+							<th class="text-xl font-bold">1 тренировка</th>
+							<th class="text-xl font-bold">4 тренировки</th>
+							<th class="text-xl font-bold">8 тренировок</th>
+							<th class="text-xl font-bold">12 тренировок</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div> 
+	
+		<footer></footer>
+	</div>
 
-		<div class="main">
-			В данном блоке размещается верстка
-		</div>
+	<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+	<script src="Assets/JS/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="Assets/JS/slider.js"></script>
 </body>
 </html>
