@@ -86,11 +86,11 @@
 				<div class="w-full flex justify-between items-center flex-wrap">
 					<img src="Assets/Images/header/logo.svg" alt="" class="w-32 md:w-44 lg:w-auto">
 					<div class="hidden md:flex gap-12 font-bold text-white md:w-full lg:w-auto md:order-last lg:order-none md:justify-center lg:justify-start">
-						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">О нас</a>
-						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Галерея</a>
-						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Абонементы</a>
-						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Тренеры</a>
-						<a href="" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Контакты</a>
+						<a href="#about" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">О нас</a>
+						<a href="#galery" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Галерея</a>
+						<a href="#ab1" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Абонементы</a>
+						<a href="#trainers" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Тренеры</a>
+						<a href="#contacts" class="hover:delay-100 transition-all duration-500 hover:text-[#F7931E]">Контакты</a>
 					</div>
 					<a href="tel:+74964161916" class="hidden md:block text-white font-semibold">+7 (496) 416-19-16</a>
 					<button class="md:hidden" id="toggler">
@@ -125,14 +125,14 @@
 					</div>
 					<div class="grid grid-cols-2 gap-7">
 						<div class="flex flex-col items-center gap-4">
-							<a href="">Тренеры</a>
-							<a href="">Контакты</a>
+							<a href="#trainers">Тренеры</a>
+							<a href="#contacts">Контакты</a>
 							<a href="tel:+74964161916">+7 (496) 416-19-16</a>
 						</div>
 						<div class="flex flex-col items-center gap-4">
-							<a href="">О нас</a>
-							<a href="">Галерея</a>
-							<a href="">Абонементы</a>
+							<a href="#about">О нас</a>
+							<a href="#galery">Галерея</a>
+							<a href="#ab1">Абонементы</a>
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,7 @@
 					<img src="Assets/Images/lifestyle/2.png" alt="" class="w-full xl:mt-10">               
 				</div>
 				<div class="flex flex-col gap-10 text-white items-center xl:items-start md:text-center xl:text-left order-first xl:order-last">
-					<p class="font-bold text-[30px]">Новый образ жизни</p>
+					<p class="font-bold text-[30px]" id="about">Новый образ жизни</p>
 					<p class="block lg:w-[450px] md:mt-2">Став частью нашей команды, вы сможете изменить привычный ритм жизни и сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал вашего тела на 100%. </p>
 					<button class="font-bold border border-white -skew-x-[20deg] p-4 z-10 relative w-fit origin-bottom">
 						<span class="skew-x-[20deg] block">Получить консультанцию</span>
@@ -172,7 +172,7 @@
 				</div>
 			</div>
 			<div class="container mx-auto flex flex-col lg:gap-14 gap-[60px] pl-4 lg:pl-0 lg:px-4">
-				<p class="text-center text-white font-bold text-3xl">Галерея</p>
+				<p class="text-center text-white font-bold text-3xl" id="galery">Галерея</p>
 				<div class="gap-10 flex items-center lg:mt-5">
 					<div class="swiper w-full h-[280px] md:h-auto xl:h-[375px] pb-10 galery-1 box-content items-center">
 						<!-- Additional required wrapper -->
@@ -260,7 +260,7 @@
 	
 		<div class="w-full min-h-screen md:py-[90px] lg:py-24 bg-cover bg-no-repeat bg-[url('Assets/Images/ticket/bg-mobile.png')] md:bg-[url('Assets/Images/ticket/bg-tablet.png')] lg:bg-[url('Assets/Images/ticket/bg-desktop.png')] px-4">
 			<div class="container mx-auto flex flex-col gap-12 md:gap-14 lg:gap-20">
-				<p class="font-bold text-3xl text-center">Абонементы</p>
+				<p class="font-bold text-3xl text-center" id="ab1">Абонементы</p>
 				<div class="w-[300px] md:w-full overflow-y-scroll lg:overflow-auto lg:w-full">
 					<table class="text-center" cellpadding="15" id="table1">
 						<tr class="border-b border-[#0C1417] pb-4 h-auto border-opacity-50" id="head1">
@@ -293,7 +293,7 @@
 						</tr>
 					</table>
 				</div>
-				<p class="font-bold text-3xl mt-4 md:mt-5 lg:mt-2 text-center">Абонементы по времени</p>
+				<p class="font-bold text-3xl mt-4 md:mt-5 lg:mt-2 text-center" id="ab2">Абонементы по времени</p>
 				<div class="w-[300px] md:w-full overflow-y-scroll lg:overflow-auto lg:w-full">
 					<table class="text-center" cellpadding="15" id="table2">
 						<tr class="border-b border-[#0C1417] pb-4 h-auto border-opacity-50" id="head2">
@@ -319,7 +319,7 @@
 						</tr>
 					</table>
 				</div>
-				<p class="font-bold text-3xl mt-4 md:mt-5 lg:mt-2 text-center">Разовые тренировки</p>
+				<p class="font-bold text-3xl mt-4 md:mt-5 lg:mt-2 text-center" id="ab3">Разовые тренировки</p>
 				<div class="grid grid-cols-1 md:grid-cols-3 mx-auto gap-7 w-fit">
 					<div class="flex flex-col py-7 items-center text-center bg-white px-6 group" style="box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);">
 						<p class="font-bold group-hover:delay-100 transition-all duration-500 group-hover:text-[#F7931E] w-fit md:h-[72px] lg:h-auto">Самостоятельные тренировки в тренажерном зале</p>
@@ -361,7 +361,7 @@
 			</div>
 		</div>
 
-		<div class="w-full flex flex-col items-center bg-cover bg-no-repeat bg-left bg-[url('Assets/Images/trainers/bg.png')] min-h-[773px] md:min-h-[873px] lg:min-h-[500px]">
+		<div class="w-full flex flex-col items-center bg-cover bg-no-repeat bg-left bg-[url('Assets/Images/trainers/bg.png')] min-h-[773px] md:min-h-[873px] lg:min-h-[500px]" id="trainers">
 			<div class="container mx-auto pl-4 xl:px-0 flex flex-col lg:flex-row gap-14 items-center h-full py-20 md:py-[90px] lg:pb-0 lg:pt-24">
 				<p class="text-3xl font-bold text-white">Тренеры</p>
 				<div class="swiper swiper-trainers w-full pb-7">
@@ -417,7 +417,7 @@
 		<div class="w-full bg-cover bg-no-repeat bg-[url('Assets/Images/form/bg-mobile.png')] md:bg-[url('Assets/Images/form/bg-tablet.png')] lg:bg-[url('Assets/Images/form/bg-desktop.png')] min-h-[567px] md:min-h-[600px]">
 			<div class="container mx-auto flex justify-center md:justify-end items-center py-20 md:py-24 lg:py-28 px-4">
 				<div class="flex flex-col items-center text-center w-[290px] md:w-[350px]">
-					<p class="text-2xl font-bold text-white">Остались вопросы?</p>
+					<p class="text-2xl font-bold text-white" id="questions">Остались вопросы?</p>
 					<p class="text-xl font-medium text-white mt-6">Оставьте Ваш номер телефона и мы <span class="text-[#F7931E]">обязательно с Вами свяжемся</span></p>
 					<input type="text" class="mt-7 border-b border-white pb-4 bg-transparent focus:outline-none text-[15px] w-full text-white" placeholder="Введите имя">
 					<input type="text" class="mt-6 border-b border-white pb-4 bg-transparent focus:outline-none text-[15px] w-full text-white" placeholder="Введите телефон">
@@ -434,7 +434,7 @@
 			<img src="Assets/Images/cart/tablet.png" alt="" class="hidden md:flex xl:hidden w-full">
 			<img src="Assets/Images/cart/mobile.png" alt="" class="md:hidden w-full">
 			<div class="flex flex-col py-12 px-9 w-full md:w-[354px] lg:w-[396px] md:absolute md:left-4 xl:left-44 md:top-14 bg-[#0C1417] top-0 z-50">
-				<p class="text-white font-bold text-3xl">Контакты</p>
+				<p class="text-white font-bold text-3xl" id="contacts">Контакты</p>
 				<div class="flex flex-col gap-7 mt-12">
 					<div class="flex gap-4 items-center">
 						<img src="Assets/Images/contacts/location.svg" alt="">
@@ -476,18 +476,18 @@
 				</div>
 				<div class="md:flex flex-col lg:flex-row lg:gap-8 xl:gap-12 text-white opacity-70 lg:pl-3 hidden">
 					<div class="flex flex-col">
-						<a href="">О нас</a>
-						<a href="">Галерея</a>
-						<a href="">Абонементы</a>
+						<a href="#about">О нас</a>
+						<a href="#galery">Галерея</a>
+						<a href="#ab1">Абонементы</a>
 					</div>
 					<div class="flex flex-col">
-						<a href="">Тренеры</a>
-						<a href="">Контакты</a>
+						<a href="#trainers">Тренеры</a>
+						<a href="#contacts">Контакты</a>
 					</div>
 					<div class="flex flex-col lg:pl-4">
-						<a href="">Абонементы</a>
-						<a href="">Абонементы по времени</a>
-						<a href="">Разовые тренировки</a>
+						<a href="#ab1">Абонементы</a>
+						<a href="#ab2">Абонементы по времени</a>
+						<a href="#ab3">Разовые тренировки</a>
 					</div>
 				</div>
 				<div class="flex flex-col gap-2 lg:flex-row lg:gap-8 xl:gap-28 md:items-end md:text-right lg:items-start lg:text-left">
@@ -524,19 +524,19 @@
 				</div>
 				<div class="grid grid-cols-2 gap-7">
 					<div class="flex flex-col items-center gap-4">
-						<a href="">Тренеры</a>
-						<a href="">Контакты</a>
+						<a href="#trainers">Тренеры</a>
+						<a href="#contacts">Контакты</a>
 						<a href="tel:+74964161916">+7 (496) 416-19-16</a>
 					</div>
 					<div class="flex flex-col items-center gap-4">
-						<a href="">О нас</a>
-						<a href="">Галерея</a>
-						<a href="">Абонементы</a>
+						<a href="#about">О нас</a>
+						<a href="#galery">Галерея</a>
+						<a href="#ab1">Абонементы</a>
 					</div>
 				</div>
 				<div class="flex flex-col gap-4 text-center items-center">
-					<a href="">Абонементы по времени</a>
-					<a href="">Разовые тренировки</a>
+					<a href="#ab2">Абонементы по времени</a>
+					<a href="#ab3">Разовые тренировки</a>
 				</div>
 			</div>
 		</footer>
