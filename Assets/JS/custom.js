@@ -65,3 +65,16 @@ document.querySelector('#table2').onmouseout = (event) => {
   j22.classList.remove("text-[#F7931E]");
   i2.classList.remove("text-[#F7931E]");
 }
+/* scroll */
+$(document).ready(function() {
+  var margin = 30;
+  $("a").click(function() {
+     $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top-margin+ "px"
+     }, {
+        duration: 1600,
+        easing: "swing"
+     });
+     return false;
+  });
+});
