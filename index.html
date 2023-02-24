@@ -361,14 +361,61 @@
 			</div>
 		</div>
 
-		<div class="w-full bg-cover bg-no-repeat bg-left bg-[url('Assets/Images/trainers/bg.png')] min-h-[773px] md:min-h-[873px] lg:min-h-[827px]">
-			<div class="container mx-auto px-4 lg:px-0 flex flex-col lg:flex-row gap-14">
-				<p class="text-3xl font-bold">Тренеры</p>
+		<div class="w-full flex flex-col items-center bg-cover bg-no-repeat bg-left bg-[url('Assets/Images/trainers/bg.png')] min-h-[773px] md:min-h-[873px] lg:min-h-[500px]">
+			<div class="container mx-auto pl-4 xl:px-0 flex flex-col lg:flex-row gap-14 items-center h-full py-20 md:py-[90px] lg:pb-0 lg:pt-24">
+				<p class="text-3xl font-bold text-white">Тренеры</p>
+				<div class="swiper swiper-trainers w-full pb-7">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide flex flex-col gap-4">
+						<img src="Assets/Images/trainers/1.png" alt="" class="w-fit">
+						<p class="text-white mt-1 font-bold">Илья Панченко</p>
+						<div class="flex flex-col gap-2 text-white opacity-50">
+							<p>Персональный тренер</p>
+							<p>Инструктор тренажерного зала</p>
+							<p>Опыт работы — 4 года</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide flex flex-col gap-4">
+						<img src="Assets/Images/trainers/2.png" alt="" class="w-fit">
+						<p class="text-white mt-1 font-bold">Екатерина Сосина-Нуньес</p>
+						<div class="flex flex-col gap-2 text-white opacity-50">
+							<p>Фитнес-тренер</p>
+							<p>Опыт работы — 4 года</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide flex flex-col gap-4">
+						<img src="Assets/Images/trainers/3.png" alt="" class="w-fit">
+						<p class="text-white mt-1 font-bold">Юлия Белова</p>
+						<div class="flex flex-col gap-2 text-white opacity-50">
+							<p>Фитнес-тренер</p>
+							<p>Опыт работы — 4 года</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide flex flex-col gap-4">
+						<img src="Assets/Images/trainers/4.png" alt="" class="w-fit">
+						<p class="text-white mt-1 font-bold">Михаил А</p>
+						<div class="flex flex-col gap-2 text-white opacity-50">
+							<p>Фитнес-тренер</p>
+							<p>Опыт работы — 4 года</p>
+						</div>
+					  </div>
+					</div>
+				  
+					<div class="swiper-scrollbar lg:hidden"></div>
+				</div>
+			</div>
+			<div class="lg:flex gap-10 items-center mx-auto h-4 lg:pb-24 hidden">
+				<button class="prev-trainers" class="w-5">
+					<img src="Assets/Images/trainers/left.svg" alt="">
+				</button>
+				<button class="next-trainers" class="w-5">
+					<img src="Assets/Images/trainers/right.svg" alt="">
+				</button>
 			</div>
 		</div>
 
 		<div class="w-full bg-cover bg-no-repeat bg-[url('Assets/Images/form/bg-mobile.png')] md:bg-[url('Assets/Images/form/bg-tablet.png')] lg:bg-[url('Assets/Images/form/bg-desktop.png')] min-h-[567px] md:min-h-[600px]">
-			<div class="container mx-auto flex justify-center md:justify-end items-center py-20 md:py-24 lg:py-28">
+			<div class="container mx-auto flex justify-center md:justify-end items-center py-20 md:py-24 lg:py-28 px-4">
 				<div class="flex flex-col items-center text-center w-[290px] md:w-[350px]">
 					<p class="text-2xl font-bold text-white">Остались вопросы?</p>
 					<p class="text-xl font-medium text-white mt-6">Оставьте Ваш номер телефона и мы <span class="text-[#F7931E]">обязательно с Вами свяжемся</span></p>
