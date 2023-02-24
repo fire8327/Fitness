@@ -360,8 +360,133 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="w-full bg-cover bg-no-repeat bg-[url('Assets/Images/form/bg-mobile.png')] md:bg-[url('Assets/Images/form/bg-tablet.png')] lg:bg-[url('Assets/Images/form/bg-desktop.png')] min-h-[567px] md:min-h-[600px]">
+			<div class="container mx-auto flex justify-center md:justify-end items-center py-20 md:py-24 lg:py-28">
+				<div class="flex flex-col items-center text-center w-[290px] md:w-[350px]">
+					<p class="text-2xl font-bold text-white">Остались вопросы?</p>
+					<p class="text-xl font-medium text-white mt-6">Оставьте Ваш номер телефона и мы <span class="text-[#F7931E]">обязательно с Вами свяжемся</span></p>
+					<input type="text" class="mt-7 border-b border-white pb-4 bg-transparent focus:outline-none text-[15px] w-full text-white" placeholder="Введите имя">
+					<input type="text" class="mt-6 border-b border-white pb-4 bg-transparent focus:outline-none text-[15px] w-full text-white" placeholder="Введите телефон">
+					<button class="font-bold border border-white text-white -skew-x-[20deg] py-4 px-8 mt-7">
+						<span class="skew-x-[20deg] block">Получить консультанцию</span>
+					</button>
+					<p class="text-sm text-white opacity-50 mt-5 md:px-9">Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-full flex flex-col relative min-h-[498px] md:h-auto">
+			<img src="Assets/Images/cart/desktop.png" alt="" class="hidden xl:flex w-full">
+			<img src="Assets/Images/cart/tablet.png" alt="" class="hidden md:flex xl:hidden w-full">
+			<img src="Assets/Images/cart/mobile.png" alt="" class="md:hidden w-full">
+			<div class="flex flex-col py-12 px-9 w-full md:w-[354px] lg:w-[396px] md:absolute md:left-4 xl:left-44 md:top-14 bg-[#0C1417] top-0 z-50">
+				<p class="text-white font-bold text-3xl">Контакты</p>
+				<div class="flex flex-col gap-7 mt-12">
+					<div class="flex gap-4 items-center">
+						<img src="Assets/Images/contacts/location.svg" alt="">
+						<p class="text-white">г. Орехово-Зуево, ул. Ленина 84</p>
+					</div>
+					<div class="flex gap-4 items-center">
+						<img src="Assets/Images/contacts/clock.svg" alt="">
+						<p class="text-white">Ежедневно с 8:00 до 23:00</p>
+					</div>
+					<div class="flex gap-4 items-start">
+						<img src="Assets/Images/contacts/phone.svg" alt="">
+						<div class="text-white">
+							<a href="tel:+74964161916">+7 (496) 416-19-16</a><span>,<br></span><a href="tel:+79258812170">+7 (925) 881-21-70</a>
+						</div>
+					</div>
+				</div>
+				<p class="mt-10 text-white font-medium">Подписывайтесь на наши соц.сети</p>
+				<div class="flex gap-4 mt-6 items-center">
+					<a href=""><img src="Assets/Images/contacts/inst.svg" alt=""></a>
+					<a href=""><img src="Assets/Images/contacts/vk.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
 	
-		<footer></footer>
+		<footer class="w-full bg-black py-12 text-sm relative">
+			<div class="container mx-auto flex flex-col md:flex-row gap-7 md:gap-14 lg:gap-4 xl:gap-20 md:justify-between px-4 xl:px-0">
+				<div class="flex flex-col">
+					<div class="flex items-center justify-between">
+						<img src="Assets/Images/footer/logo.png" alt="" class="w-32 md:w-44 lg:w-56">	
+						<button class="md:hidden" id="toggler2">
+							<img src="Assets/Images/header/menu.svg" alt="">
+						</button>
+					</div>
+					<div class="text-white opacity-70 mt-8 md:flex gap-4 hidden">
+						<p>©</p>
+						<p>Все права защищены</p>
+					</div>
+					<p class="text-white opacity-70 mt-4 hidden md:block">Орехово-Зуево, 2013-2022</p>
+				</div>
+				<div class="md:flex flex-col lg:flex-row lg:gap-8 xl:gap-12 text-white opacity-70 lg:pl-3 hidden">
+					<div class="flex flex-col">
+						<a href="">О нас</a>
+						<a href="">Галерея</a>
+						<a href="">Абонементы</a>
+					</div>
+					<div class="flex flex-col">
+						<a href="">Тренеры</a>
+						<a href="">Контакты</a>
+					</div>
+					<div class="flex flex-col lg:pl-4">
+						<a href="">Абонементы</a>
+						<a href="">Абонементы по времени</a>
+						<a href="">Разовые тренировки</a>
+					</div>
+				</div>
+				<div class="flex flex-col gap-2 lg:flex-row lg:gap-8 xl:gap-28 md:items-end md:text-right lg:items-start lg:text-left">
+					<div class="flex flex-col gap-1 lg:gap-4 text-white opacity-70 order-2 lg:order-none md:items-end lg:items-start">
+						<a href="">Наши соц.сети</a>
+						<div class="flex gap-4 items-center">
+							<a href=""><img src="Assets/Images/footer/inst.svg" alt=""></a>
+							<a href=""><img src="Assets/Images/footer/vk.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="flex flex-col gap-2 lg:gap-4 text-white opacity-70">
+						<p>г. Орехово-Зуево, ул. Ленина 84</p>
+						<p>Ежедневно с 8:00 до 23:00</p>
+						<div class="flex">
+							<a href="tel:+74964161916">+7 (496) 416-19-16</a><span>,<br></span><a href="tel:+79258812170">+7 (925) 881-21-70</a>
+						</div>
+						<p>Политика конфиденциальности</p>
+					</div>
+					<div class="flex flex-col order-last mt-7 md:hidden">
+						<div class="text-white opacity-70 flex gap-4">
+							<p>©</p>
+							<p>Все права защищены</p>
+						</div>
+						<p class="text-white opacity-70 mt-4">Орехово-Зуево, 2013-2022</p>
+					</div>
+				</div>
+			</div>
+			<div id="mobile__nav2" class="backdrop-blur-[5px] bg-gradient-to-b from-[rgba(0,0,0,0.85)] to-[rgba(0,0,0,0.8075)] absolute opacity-0 text-white text-sm font-semibold top-0 right-0 flex flex-col gap-7 w-full md:hidden pt-12 px-4 transform -translate-y-full transition duration-300 ease-in-out z-30">
+				<div class="flex justify-between items-center">
+					<img src="Assets/Images/footer/logo.png" alt="" class="w-32">
+					<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg" id="toggler__expanded2">
+						<path d="M24.5 1.25L13.25 12.5M2 23.75L13.25 12.5M13.25 12.5L2 1.25L24.5 23.75" stroke="white" stroke-width="3"/>
+					</svg>
+				</div>
+				<div class="grid grid-cols-2 gap-7">
+					<div class="flex flex-col items-center gap-4">
+						<a href="">Тренеры</a>
+						<a href="">Контакты</a>
+						<a href="tel:+74964161916">+7 (496) 416-19-16</a>
+					</div>
+					<div class="flex flex-col items-center gap-4">
+						<a href="">О нас</a>
+						<a href="">Галерея</a>
+						<a href="">Абонементы</a>
+					</div>
+				</div>
+				<div class="flex flex-col gap-4 text-center items-center">
+					<a href="">Абонементы по времени</a>
+					<a href="">Разовые тренировки</a>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 	<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
