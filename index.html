@@ -258,7 +258,7 @@
 			</div>
 		</div>
 	
-		<div class="w-full min-h-screen md:py-[90px] lg:py-24 bg-cover bg-no-repeat bg-[url('Assets/Images/ticket/bg-mobile.png')] md:bg-[url('Assets/Images/ticket/bg-tablet.png')] lg:bg-[url('Assets/Images/ticket/bg-desktop.png')] px-4">
+		<div class="w-full min-h-screen py-20 md:py-[90px] lg:py-24 bg-cover bg-no-repeat bg-[url('Assets/Images/ticket/bg-mobile.png')] md:bg-[url('Assets/Images/ticket/bg-tablet.png')] lg:bg-[url('Assets/Images/ticket/bg-desktop.png')] px-4">
 			<div class="container mx-auto flex flex-col gap-12 md:gap-14 lg:gap-20">
 				<p class="font-bold text-3xl text-center" id="ab1">Абонементы</p>
 				<div class="w-[300px] md:w-full overflow-y-scroll lg:overflow-auto lg:w-full">
@@ -421,10 +421,50 @@
 					<p class="text-xl font-medium text-white mt-6">Оставьте Ваш номер телефона и мы <span class="text-[#F7931E]">обязательно с Вами свяжемся</span></p>
 					<input type="text" class="mt-7 border-b border-white pb-4 bg-transparent focus:outline-none text-[15px] w-full text-white" placeholder="Введите имя">
 					<input type="text" class="mt-6 border-b border-white pb-4 bg-transparent focus:outline-none text-[15px] w-full text-white" placeholder="Введите телефон">
-					<button class="font-bold border border-white text-white -skew-x-[20deg] py-4 px-8 mt-7">
+					<button class="font-bold border border-white text-white -skew-x-[20deg] py-4 px-8 mt-7" data-modal-target="defaultModal" data-modal-toggle="defaultModal">
 						<span class="skew-x-[20deg] block">Получить консультанцию</span>
 					</button>
 					<p class="text-sm text-white opacity-50 mt-5 md:px-9">Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности</p>
+				</div>
+			</div>
+			<div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+				<div class="relative w-fit h-full max-w-2xl md:h-auto">
+					<!-- Modal content -->
+					<div class="relative bg-[url('Assets/Images/modal/mobile.png')]  md:bg-[url('Assets/Images/modal/tablet.png')] lg:bg-[url('Assets/Images/modal/desktop.png')] shadow pt-2 pb-7 px-3 md:pt-12 md:pb-28 md:px-12 w-[290px] md:w-[650px] lg:w-[900px]">
+						<!-- Modal header -->
+						<div class="flex md:items-center justify-between">
+							<img src="Assets/Images/modal/logo.png" alt="" class="w-36 md:w-44">
+							<button type="button" data-modal-target="defaultModal" data-modal-toggle="defaultModal">
+								<img src="Assets/Images/modal/close.svg" alt="" class="w-5 md:w-10">
+								<span class="sr-only">Close modal</span>
+							</button>
+						</div>
+						<!-- Modal body -->
+						<div class="mx-auto mt-5 md:mt-10 lg:mt-20 flex flex-col gap-4 md:gap-7 w-fit items-center md:text-center">
+							<div class="flex gap-5 md:gap-7 items-center">
+								<img src="Assets/Images/modal/accept.svg" alt="" class="w-7 md:w-8">
+								<p class="text-white font-bold text-2xl md:text-3xl">Данные успешно отправлены</p>
+							</div>
+							<p class="text-white font-bold text-xl md:text-2xl">Мы свяжемся с вами вближайшее время</p>
+							<div class="flex flex-col gap-4 md:items-center">
+								<div class="flex flex-col md:flex-row gap-4 md:gap-6">
+									<div class="flex gap-4 text-sm md:text-base">
+										<img src="Assets/Images/modal/location.svg" alt="">
+										<p class="text-white">г. Орехово-Зуево, ул. Ленина 84</p>
+									</div>
+									<div class="flex gap-4 text-sm md:text-base">
+										<img src="Assets/Images/modal/clock.svg" alt="">
+										<p class="text-white">Ежедневно с 8:00 до 23:00</p>
+									</div>
+								</div>
+								<p class="font-medium text-white text-sm md:text-base">Подписывайтесь на наши соц.сети</p>
+								<div class="flex items-center gap-4">
+									<a href=""><img src="Assets/Images/modal/inst.svg" alt=""></a>
+									<a href=""><img src="Assets/Images/modal/vk.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -433,7 +473,7 @@
 			<img src="Assets/Images/cart/desktop.png" alt="" class="hidden xl:flex w-full">
 			<img src="Assets/Images/cart/tablet.png" alt="" class="hidden md:flex xl:hidden w-full">
 			<img src="Assets/Images/cart/mobile.png" alt="" class="md:hidden w-full">
-			<div class="flex flex-col py-12 px-9 w-full md:w-[354px] lg:w-[396px] md:absolute md:left-4 xl:left-44 md:top-14 bg-[#0C1417] top-0 z-50">
+			<div class="flex flex-col py-12 px-9 w-full md:w-[354px] lg:w-[396px] md:absolute md:left-4 xl:left-44 md:top-14 bg-[#0C1417] top-0 z-40">
 				<p class="text-white font-bold text-3xl" id="contacts">Контакты</p>
 				<div class="flex flex-col gap-7 mt-12">
 					<div class="flex gap-4 items-center">
